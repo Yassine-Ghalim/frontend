@@ -1,0 +1,65 @@
+.logo {
+  max-width: 200px;
+  margin: 20px auto;
+  display: block;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.step-container {
+  display: flex;
+  align-items: start;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #E86C37;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.step-inactive {
+  background-color: #FFE4D6;
+  color: #E86C37;
+}
+
+.step-content {
+  flex-grow: 1;
+}
+
+.step-title {
+  font-weight: bold;
+  color: #2F3F7F;
+  margin-bottom: 5px;
+}
+
+.step-subtitle {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background-color: #E86C37;
+  border-color: #E86C37;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover {
+  background-color: #d55a25;
+  border-color: #d55a25;
+}

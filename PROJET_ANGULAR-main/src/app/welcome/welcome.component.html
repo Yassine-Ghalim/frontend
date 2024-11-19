@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMEEX - Nothing Stops Us</title>
+    
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-auto">
+                    <span class="me-4">
+                        <i class="bi bi-envelope"></i>
+                        contact&#64;ameex.ma
+                    </span>
+                    <span>
+                        <i class="bi bi-telephone"></i>
+                        +212635185425
+                    </span>
+                </div>
+                <div class="col-auto d-flex align-items-center">
+                    <!-- Social Media Icons -->
+                    <a href="#" class="social-icon me-4">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon me-4">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon me-4">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <!-- Buttons -->
+                    <button (click)="goToLogin()" class="btn btn-outline-light" i18n >Se connecter</button>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            FR
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <span class="flag-icon flag-icon-fr me-2"></span> Français
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <span class="flag-icon flag-icon-gb me-2"></span> English
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <span class="flag-icon flag-icon-ma me-2"></span> العربية
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/Logo.webp" alt="AMEEX" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <button><a class="nav-link" (click)="scrollTo('accueil')">Accueil</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button><a class="nav-link" (click)="scrollTo('qui-sommes-nous')">Qui sommes-nous ?</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button><a class="nav-link" (click)="scrollTo('nos-services')">Nos Services</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button><a class="nav-link" (click)="scrollTo('pourquoi-ameex')">Pourquoi Ameex?</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button><a class="nav-link" (click)="scrollTo('temoignages')">Témoignages</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button><a class="nav-link" (click)="scrollTo('blog')">Blog</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button><a class="nav-link" (click)="scrollTo('commencer')">Commencer maintenant</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   <!-- Hero Section -->
+<section id="accueil" class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <!-- Services Buttons -->
+                <div class="services-container">
+                    <button class="service-button">
+                        <i class="bi bi-truck"></i> Livraison
+                    </button>
+                    <button class="service-button">
+                        <i class="bi bi-box-seam"></i> Entreposage
+                    </button>
+                    <button class="service-button disabled-button">
+                        <i class="bi bi-headset"></i> Centre D'appel
+                        <span class="coming-soon">À Venir...</span>
+                    </button>
+                    <button class="service-button disabled-button">
+                        <i class="bi bi-shop"></i> Marketplace
+                        <span class="coming-soon">À Venir...</span>
+                    </button>
+                    
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <!-- Message Box -->
+                <div class="message-box d-flex align-items-start">
+                    <i class="bi bi-arrow-right-circle-fill icon-style fs-4"></i>
+                    <div class="text-content">
+                        <p class="text-primary-blue mb-2 fs-5">Plus qu'une Livraison,</p>
+                        <p class="text-dark mb-2 fs-5">une Expérience <span class="text-primary-orange">AMEEX</span> ceptionnelle.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+            <div class="col-lg-4 d-flex justify-content-center align-items-end">
+                <div class="mt-4">
+                    <button (click)="goToRegister()" class="styled-button btn btn-primary btn-lg">
+                        S'inscrire maintenant
+                    </button>
+                </div>
+            </div>
+            
+                <div class=" col-lg-2">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-4">
+                            <div class="person-image-container">
+                                <img src="assets/img/person.png" alt="Person" class="person-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         
+        </div>
+    </div>
+   
+</section>
+<!-- Person Image Section -->
+
+
+<div class="arrow-separator">
+    <i class="bi bi-arrow-down-circle-fill arrow-icon"></i>
+</div>
+
+<!-- Qui sommes-nous Section -->
+<section id="qui-sommes-nous">
+    <div class="container">
+        <div class="content-wrapper">  
+            <div class="cc">
+                <img src="assets/img/about-us-image (2).png" alt="Notre équipe en action">
+            </div>
+            <div class="zone-blanche">
+                <h2>Qui sommes-nous ?</h2>
+                <h4>Notre mission est de redéfinir l'excellence dans le service clients à travers des solutions innovantes et personnalisées.</h4>
+                <h4>Nous combinons expertise technique et approche humaine pour créer des expériences client exceptionnelles.</h4>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Années d'expérience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Clients satisfaits</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+   <!-- Flèche stylée entre chaque section -->
+   <div class="arrow-separator">
+    <i class="bi bi-arrow-down-circle-fill arrow-icon"></i>
+</div>
+<!-- Nos Services Section -->
+<section id="nos-services" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">        
+            <div class="col-lg-6">
+                <h2>Nos Services</h2>
+                <p>Nous proposons une gamme complète de services, notamment :</p>
+                <ul>
+                    <li>Livraison rapide et sécurisée</li>
+                    <li>Entreposage de vos produits</li>
+                    <li>Centre d’appel pour vos besoins clients</li>
+                    <li>Marketplace pour vos ventes en ligne</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <img src="assets/img/services-image.jpg" alt="Nos Services" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Flèche stylée entre chaque section -->
+ <div class="arrow-separator">
+    <i class="bi bi-arrow-down-circle-fill arrow-icon"></i>
+</div>
+
+<!-- Pourquoi Ameex Section -->
+<section id="pourquoi-ameex" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2>Pourquoi Ameex ?</h2>
+                <p>Nous mettons l’innovation et la satisfaction client au cœur de nos services. Nos solutions sont personnalisées pour répondre à vos besoins spécifiques.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="assets/img/why-ameex.jpg" alt="Pourquoi Ameex" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Flèche stylée entre chaque section -->
+ <div class="arrow-separator">
+    <i class="bi bi-arrow-down-circle-fill arrow-icon"></i>
+</div>
+
+<!-- Témoignages Section -->
+<section id="temoignages" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2>Témoignages</h2>
+                <p>Nos clients parlent de nous :</p>
+                <blockquote>"AMEEX nous a permis de livrer plus rapidement que jamais. Une équipe exceptionnelle !"</blockquote>
+                <blockquote>"Grâce à AMEEX, notre entreprise a pu évoluer rapidement."</blockquote>
+            </div>
+            <div class="col-lg-6">
+                <img src="assets/img/testimonials-image.jpg" alt="Témoignages" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Flèche stylée entre chaque section -->
+<div class="arrow-separator">
+    <i class="bi bi-arrow-down-circle-fill arrow-icon"></i>
+</div>
+
+<!-- Blog Section -->
+<section id="blog" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2>Blog</h2>
+                <p>Découvrez les dernières tendances et nos conseils sur la logistique, la livraison et bien plus encore.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="assets/img/blog-image.jpg" alt="Blog" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Flèche stylée entre chaque section -->
+<div class="arrow-separator">
+    <i class="bi bi-arrow-down-circle-fill arrow-icon"></i>
+</div>
+
+<!-- Commencer Section -->
+<section id="commencer" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2>Commencer maintenant</h2>
+                <p>Prêt à rejoindre AMEEX ? Inscrivez-vous dès maintenant et découvrez une nouvelle façon de gérer vos besoins logistiques.</p>
+                <button class="btn btn-primary btn-lg">Inscription</button>
+            </div>
+            <div class="col-lg-6">
+                <img src="assets/img/start-now.jpg" alt="Commencer maintenant" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+                
+   
+</body>
+</html>
