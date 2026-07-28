@@ -19,6 +19,7 @@ Responsive user interface
 REST API communication using Angular HttpClient
 Modular and reusable Angular components
 Error handling for API requests
+
 🏗️ Architecture
 
 The application follows a layered architecture.
@@ -43,24 +44,6 @@ Data Layer: JSON Server exposing REST endpoints from a local JSON database.
 
 This design makes the frontend independent from the backend implementation.
 
-📂 Project Structure
-ecommerce-app/
-│
-├── src/
-│   ├── app/
-│   │   ├── components/
-│   │   ├── services/
-│   │   ├── models/
-│   │   ├── pages/
-│   │   ├── shared/
-│   │   └── app.routes.ts
-│   │
-│   ├── assets/
-│   └── environments/
-│
-├── db.json
-├── package.json
-└── README.md
 ⚙️ Technologies Used
 Frontend
 Angular
@@ -79,7 +62,6 @@ npm
 Visual Studio Code
 
 🔌 REST API Endpoints
-
 The application consumes a mock REST API provided by JSON Server.
 
 Method	Endpoint	Description
