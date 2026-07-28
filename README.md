@@ -45,6 +45,7 @@ Data Layer: JSON Server exposing REST endpoints from a local JSON database.
 This design makes the frontend independent from the backend implementation.
 
 ⚙️ Technologies Used
+
 Frontend ,
 Angular ,
 TypeScript ,
@@ -62,16 +63,17 @@ npm ,
 Visual Studio Code.
 
 🔌 REST API Endpoints
+
 The application consumes a mock REST API provided by JSON Server.
 
 Method	Endpoint	Description
 
-GET	/products	Retrieve all products.
+GET	  /products  	Retrieve all products.
 
-GET	/products/:id	Retrieve product details
+GET  	/products/:id	  Retrieve product details
 
-POST	/cart	Add product to cart
+POST  	/cart  	Add product to cart
 
-PUT	/cart/:id	Update cart item
+PUT	  /cart/:id	  Update cart item
 
-DELETE	/cart/:id	Remove item from cart
+DELETE	  /cart/:id	  Remove item from cart
