@@ -59,7 +59,7 @@ Development Tools ,
 Git ,
 GitHub ,
 npm ,
-Visual Studio Code ,
+Visual Studio Code.
 
 🔌 REST API Endpoints
 The application consumes a mock REST API provided by JSON Server.
