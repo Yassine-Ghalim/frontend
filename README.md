@@ -45,28 +45,33 @@ Data Layer: JSON Server exposing REST endpoints from a local JSON database.
 This design makes the frontend independent from the backend implementation.
 
 ⚙️ Technologies Used
-Frontend
-Angular
-TypeScript
-HTML5
-CSS3
-Bootstrap
-RxJS
-Backend (Mock)
-JSON Server
-REST API
-Development Tools
-Git
-GitHub
-npm
-Visual Studio Code
+Frontend ,
+Angular ,
+TypeScript ,
+HTML5 ,
+CSS3 ,
+Bootstrap ,
+RxJS ,
+Backend (Mock) ,
+JSON Server ,
+REST API ,
+Development Tools ,
+Git ,
+GitHub ,
+npm ,
+Visual Studio Code ,
 
 🔌 REST API Endpoints
 The application consumes a mock REST API provided by JSON Server.
 
 Method	Endpoint	Description
-GET	/products	Retrieve all products
+
+GET	/products	Retrieve all products.
+
 GET	/products/:id	Retrieve product details
+
 POST	/cart	Add product to cart
+
 PUT	/cart/:id	Update cart item
+
 DELETE	/cart/:id	Remove item from cart
